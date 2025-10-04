@@ -820,48 +820,75 @@ transform = Transform3D(-4.80825e-08, 0, -1, 0, 1, 0, 1.1, 0, -4.37114e-08, 5.57
 [node name="Player" parent="." instance=ExtResource("7_b17rl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.850021, 0.3, -0.221601)
 
-[node name="MorgueBed" type="Node3D" parent="."]
+[node name="InfirmaryBed" type="Node3D" parent="."]
 
-[node name="Bed_single" parent="MorgueBed" instance=ExtResource("8_fc6fm")]
+[node name="Bed_single" parent="InfirmaryBed" instance=ExtResource("8_fc6fm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.282528, -3)
 
-[node name="ComputerSystem" parent="MorgueBed" instance=ExtResource("9_f4dry")]
+[node name="ComputerSystem" parent="InfirmaryBed" instance=ExtResource("9_f4dry")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.31091, -2.25468)
 
-[node name="MorgueBed4" type="Node3D" parent="."]
+[node name="InfirmaryBed4" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
 
-[node name="Bed_single" parent="MorgueBed4" instance=ExtResource("8_fc6fm")]
+[node name="Bed_single" parent="InfirmaryBed4" instance=ExtResource("8_fc6fm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.282528, -3)
 
-[node name="ComputerSystem" parent="MorgueBed4" instance=ExtResource("9_f4dry")]
+[node name="ComputerSystem" parent="InfirmaryBed4" instance=ExtResource("9_f4dry")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.31091, -2.25468)
 
-[node name="MorgueBed5" type="Node3D" parent="."]
+[node name="InfirmaryBed5" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
 
-[node name="Bed_single" parent="MorgueBed5" instance=ExtResource("8_fc6fm")]
+[node name="Bed_single" parent="InfirmaryBed5" instance=ExtResource("8_fc6fm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.282528, -3)
 
-[node name="ComputerSystem" parent="MorgueBed5" instance=ExtResource("9_f4dry")]
+[node name="ComputerSystem" parent="InfirmaryBed5" instance=ExtResource("9_f4dry")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.31091, -2.25468)
 
-[node name="MorgueBed2" type="Node3D" parent="."]
+[node name="InfirmaryBed6" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.00877142, 0, 0.564411)
+
+[node name="Bed_single" parent="InfirmaryBed6" instance=ExtResource("8_fc6fm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.282528, -3)
+
+[node name="ComputerSystem" parent="InfirmaryBed6" instance=ExtResource("9_f4dry")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.31091, -2.25468)
+
+[node name="InfirmaryBed7" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 2.00877, 0, 0.564412)
+
+[node name="Bed_single" parent="InfirmaryBed7" instance=ExtResource("8_fc6fm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.282528, -3)
+
+[node name="ComputerSystem" parent="InfirmaryBed7" instance=ExtResource("9_f4dry")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.31091, -2.25468)
+
+[node name="InfirmaryBed8" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.00877, 0, 0.564412)
+
+[node name="Bed_single" parent="InfirmaryBed8" instance=ExtResource("8_fc6fm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.282528, -3)
+
+[node name="ComputerSystem" parent="InfirmaryBed8" instance=ExtResource("9_f4dry")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.31091, -2.25468)
+
+[node name="InfirmaryBed2" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
 
-[node name="Bed_single" parent="MorgueBed2" instance=ExtResource("8_fc6fm")]
+[node name="Bed_single" parent="InfirmaryBed2" instance=ExtResource("8_fc6fm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.282528, -3)
 
-[node name="ComputerSystem" parent="MorgueBed2" instance=ExtResource("9_f4dry")]
+[node name="ComputerSystem" parent="InfirmaryBed2" instance=ExtResource("9_f4dry")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.31091, -2.25468)
 
-[node name="MorgueBed3" type="Node3D" parent="."]
+[node name="InfirmaryBed3" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 
-[node name="Bed_single" parent="MorgueBed3" instance=ExtResource("8_fc6fm")]
+[node name="Bed_single" parent="InfirmaryBed3" instance=ExtResource("8_fc6fm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.282528, -3)
 
-[node name="ComputerSystem" parent="MorgueBed3" instance=ExtResource("9_f4dry")]
+[node name="ComputerSystem" parent="InfirmaryBed3" instance=ExtResource("9_f4dry")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.31091, -2.25468)
 
 [node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
