@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://jmtwrh5s6551"]
+[gd_scene load_steps=15 format=3 uid="uid://jmtwrh5s6551"]
 
 [ext_resource type="PackedScene" uid="uid://brv1i2sq2ml1b" path="res://scenes/environment/floor.tscn" id="1_tmyhc"]
 [ext_resource type="PackedScene" uid="uid://c408nsdsfcjy3" path="res://scenes/environment/wall_banner.tscn" id="2_288bf"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://qtnnmdj75riq" path="res://scenes/environment/bed_single.tscn" id="8_fc6fm"]
 [ext_resource type="PackedScene" uid="uid://cq1llqop7gg6c" path="res://scenes/environment/computer_system.tscn" id="9_f4dry"]
 [ext_resource type="PackedScene" uid="uid://dtbldrbdlj7ml" path="res://scenes/ui/pause_menu.tscn" id="10_yud1c"]
+[ext_resource type="PackedScene" uid="uid://crjvyg7ffwvnj" path="res://scenes/ui/main_menu.tscn" id="11_v23pc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cwpkd"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -909,3 +910,6 @@ light_energy = 1.838
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="PauseMenu" parent="UI" instance=ExtResource("10_yud1c")]
+
+[node name="MainMenu" parent="UI" instance=ExtResource("11_v23pc")]
+visible = false

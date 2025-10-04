@@ -1,0 +1,143 @@
+[gd_scene load_steps=6 format=3 uid="uid://crjvyg7ffwvnj"]
+
+[ext_resource type="Texture2D" uid="uid://rybnnwq3l8l1" path="res://assets/ui/PNG/Extra/Default/panel_rectangle.png" id="1_x1bmk"]
+[ext_resource type="Texture2D" uid="uid://dwd04w1lrmykn" path="res://assets/ui/PNG/Extra/Default/panel_rectangle_screws.png" id="2_xmqx1"]
+[ext_resource type="FontFile" uid="uid://db3s445a0y6rr" path="res://assets/ui/Font/Kenney Future.ttf" id="3_xfhqo"]
+[ext_resource type="Texture2D" uid="uid://bt6k7tfgt15iy" path="res://assets/ui/PNG/Red/Default/button_square_header_blade_rectangle.png" id="4_srkxd"]
+[ext_resource type="FontFile" uid="uid://bi6rwahcqhofx" path="res://assets/ui/Font/Kenney Future Narrow.ttf" id="5_mid23"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Backdrop" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="Backdrop"]
+z_index = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.705882)
+
+[node name="PanelRectangle" type="TextureRect" parent="Backdrop"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_x1bmk")
+
+[node name="TitlePanel" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="TitlePanel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -396.0
+offset_top = 59.0
+offset_right = 372.0
+offset_bottom = 315.0
+grow_horizontal = 2
+texture = ExtResource("2_xmqx1")
+
+[node name="Label" type="Label" parent="TitlePanel"]
+offset_left = 192.0
+offset_top = 102.0
+offset_right = 954.0
+offset_bottom = 277.0
+theme_override_colors/font_color = Color(0.521569, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_xfhqo")
+theme_override_font_sizes/font_size = 86
+text = "Space Demo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -414.0
+offset_top = -309.0
+offset_right = 399.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 14
+
+[node name="StartButton" type="TextureButton" parent="ButtonContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("4_srkxd")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonContainer/StartButton"]
+layout_mode = 1
+offset_left = 6.0
+offset_top = 3.0
+offset_right = 96.0
+offset_bottom = 29.0
+theme_override_fonts/font = ExtResource("5_mid23")
+theme_override_font_sizes/font_size = 22
+text = "START"
+
+[node name="LoadButton" type="TextureButton" parent="ButtonContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("4_srkxd")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonContainer/LoadButton"]
+layout_mode = 1
+offset_left = 11.0
+offset_top = 1.0
+offset_right = 101.0
+offset_bottom = 27.0
+theme_override_fonts/font = ExtResource("5_mid23")
+theme_override_font_sizes/font_size = 22
+text = "LOAD"
+
+[node name="OptionsButton" type="TextureButton" parent="ButtonContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("4_srkxd")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonContainer/OptionsButton"]
+layout_mode = 1
+offset_left = 6.0
+offset_top = 7.0
+offset_right = 96.0
+offset_bottom = 33.0
+theme_override_fonts/font = ExtResource("5_mid23")
+theme_override_font_sizes/font_size = 16
+text = "OPTIONS"
+
+[node name="QuitButton" type="TextureButton" parent="ButtonContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("4_srkxd")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonContainer/QuitButton"]
+layout_mode = 1
+offset_left = 21.0
+offset_top = 2.0
+offset_right = 111.0
+offset_bottom = 28.0
+theme_override_fonts/font = ExtResource("5_mid23")
+theme_override_font_sizes/font_size = 22
+text = "QUIT"
