@@ -38,6 +38,12 @@ func _input(event: InputEvent):
 	if event.is_action_pressed("pause"):  # We'll add this to Input Map
 		toggle_pause()
 		get_viewport().set_input_as_handled()
+		
+	# Return to menu only when paused
+	if is_paused and event.is_action_pressed("return"):
+		get_tree().paused = false
+		get_tree().call_deferred("change_scene_to_file", "res://scenes/ui/main_menu.tscn")
+		#get_viewport().set_input_as_handled()
 
 func toggle_pause():
 	set_pause_state(not is_paused)

@@ -487,3 +487,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.314407, 0)
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.269548, 0.151515, 0.597864)
+
+[node name="InteractionRaycast" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.216051, 0)
+
+[node name="RayCast3D" type="RayCast3D" parent="InteractionRaycast"]
+transform = Transform3D(1, 0, 0, 0, 0.0549727, -0.916601, 0, 0.670653, 0.0751328, 0, 0, 0)

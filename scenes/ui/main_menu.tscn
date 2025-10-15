@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://crjvyg7ffwvnj"]
+[gd_scene load_steps=7 format=3 uid="uid://crjvyg7ffwvnj"]
 
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_jd35j"]
 [ext_resource type="Texture2D" uid="uid://rybnnwq3l8l1" path="res://assets/ui/PNG/Extra/Default/panel_rectangle.png" id="1_x1bmk"]
 [ext_resource type="Texture2D" uid="uid://dwd04w1lrmykn" path="res://assets/ui/PNG/Extra/Default/panel_rectangle_screws.png" id="2_xmqx1"]
 [ext_resource type="FontFile" uid="uid://db3s445a0y6rr" path="res://assets/ui/Font/Kenney Future.ttf" id="3_xfhqo"]
@@ -13,6 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_jd35j")
 
 [node name="Backdrop" type="CanvasLayer" parent="."]
 layer = -1
@@ -60,28 +62,18 @@ text = "Space Demo"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ButtonContainer" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -414.0
-offset_top = -309.0
-offset_right = 399.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_constants/separation = 14
-
-[node name="StartButton" type="TextureButton" parent="ButtonContainer"]
+[node name="StartButton" type="TextureButton" parent="."]
 layout_mode = 2
+offset_left = 472.0
+offset_top = 339.0
+offset_right = 664.0
+offset_bottom = 403.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("4_srkxd")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="ButtonContainer/StartButton"]
+[node name="Label" type="Label" parent="StartButton"]
 layout_mode = 1
 offset_left = 6.0
 offset_top = 3.0
@@ -91,14 +83,18 @@ theme_override_fonts/font = ExtResource("5_mid23")
 theme_override_font_sizes/font_size = 22
 text = "START"
 
-[node name="LoadButton" type="TextureButton" parent="ButtonContainer"]
+[node name="LoadButton" type="TextureButton" parent="."]
 layout_mode = 2
+offset_left = 472.0
+offset_top = 417.0
+offset_right = 664.0
+offset_bottom = 481.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("4_srkxd")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="ButtonContainer/LoadButton"]
+[node name="Label" type="Label" parent="LoadButton"]
 layout_mode = 1
 offset_left = 11.0
 offset_top = 1.0
@@ -108,14 +104,18 @@ theme_override_fonts/font = ExtResource("5_mid23")
 theme_override_font_sizes/font_size = 22
 text = "LOAD"
 
-[node name="OptionsButton" type="TextureButton" parent="ButtonContainer"]
+[node name="OptionsButton" type="TextureButton" parent="."]
 layout_mode = 2
+offset_left = 472.0
+offset_top = 495.0
+offset_right = 664.0
+offset_bottom = 559.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("4_srkxd")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="ButtonContainer/OptionsButton"]
+[node name="Label" type="Label" parent="OptionsButton"]
 layout_mode = 1
 offset_left = 6.0
 offset_top = 7.0
@@ -125,14 +125,18 @@ theme_override_fonts/font = ExtResource("5_mid23")
 theme_override_font_sizes/font_size = 16
 text = "OPTIONS"
 
-[node name="QuitButton" type="TextureButton" parent="ButtonContainer"]
+[node name="QuitButton" type="TextureButton" parent="."]
 layout_mode = 2
+offset_left = 472.0
+offset_top = 573.0
+offset_right = 664.0
+offset_bottom = 637.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("4_srkxd")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="ButtonContainer/QuitButton"]
+[node name="Label" type="Label" parent="QuitButton"]
 layout_mode = 1
 offset_left = 21.0
 offset_top = 2.0
@@ -141,3 +145,6 @@ offset_bottom = 28.0
 theme_override_fonts/font = ExtResource("5_mid23")
 theme_override_font_sizes/font_size = 22
 text = "QUIT"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
